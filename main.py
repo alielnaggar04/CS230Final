@@ -1,15 +1,3 @@
-"""
-Name:       Ali Elnaggar
-CS230:      5
-Data:       Boston Park Meters
-URL:        https://abqqyggoesppnkhoj9m5zp.streamlit.app/
-
-Description:
-
-This program ... (This Streamlit app offers a dynamic exploration of Boston's parking meters. Utilizing pandas for data processing, it features an interactive PyDeck map with meter details, a pie chart for street-level meter analysis, and a heatmap for spatial distribution. Designed for intuitive urban parking insights.)
-"""
-
-
 import streamlit as st
 import pandas as pd
 import pydeck as pdk
@@ -36,8 +24,9 @@ with st.sidebar:
 # Home Page
 def home_page():
     st.title("Boston Parking Meters Analysis - Home")
-    image = Image.open("/Users/alielnaggar/Desktop/School/Uni/CS 230/Final/GettyImages_137554808.jpg")
-    st.image(image, caption='Image showing Boston Park Meter')
+    image_path = "GettyImages_137554808.jpg"  # Replace with the name of your image file
+    image = Image.open(image_path)
+    st.image(image, caption='Boston Park Meter')
     st.write("Parking Meters Data:", df_bos)
 
     st.markdown("### Map Showing Parking Meters in Boston")

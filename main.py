@@ -24,7 +24,7 @@ def load_data(path):
     return df
 
 # Load the data
-df_bos = load_data("/Users/alielnaggar/Desktop/School/Uni/CS 230/Final/Parking_Meters.csv")
+df_bos = load_data("Parking_Meters.csv")
 
 # Sidebar for navigation and meter ID search
 with st.sidebar:
